@@ -1,0 +1,7 @@
+Task.pdf
+ROADMAP.md
+.env
+venv/
+__pycache__/
+static/
+scratch/
