@@ -4,7 +4,7 @@ A REST API built with **FastAPI** and **MySQL** for managing products and catego
 
 ## Tech Stack
 
-- **Python 3.10+**
+- **Python 3.14+**
 - **FastAPI** — web framework with auto-generated Swagger docs
 - **MySQL** — relational database
 - **uvicorn** — ASGI server
@@ -100,6 +100,7 @@ pavansgroup_task/
 │   ├── main.py              ← FastAPI app entry point
 │   ├── database.py          ← MySQL connection (reads from .env)
 │   ├── models.py            ← Pydantic request/response schemas
+│   ├── errors.py            ← Global exception handlers
 │   ├── routers/
 │   │   ├── __init__.py
 │   │   ├── categories.py    ← Category CRUD endpoints
@@ -107,12 +108,14 @@ pavansgroup_task/
 │   └── utils/
 │       ├── __init__.py
 │       └── file_handler.py  ← Image save/delete helpers
-├── uploads/                 ← Uploaded product images
+├── static/
+│   └── uploads/             ← Uploaded product images
 ├── schema.sql               ← Database CREATE TABLE statements
 ├── requirements.txt
 ├── .env                     ← DB credentials (not committed)
 ├── .env.example             ← Template for .env
 ├── .gitignore
+├── .python-version          ← Specifies Python 3.14
 └── README.md
 ```
 
