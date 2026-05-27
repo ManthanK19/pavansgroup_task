@@ -115,7 +115,6 @@ pavansgroup_task/
 ├── .env                     ← DB credentials (not committed)
 ├── .env.example             ← Template for .env
 ├── .gitignore
-├── .python-version          ← Specifies Python 3.14
 └── README.md
 ```
 
