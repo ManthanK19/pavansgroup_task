@@ -1,14 +1,14 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from datetime import datetime
 from typing import Optional
 
 
 class CategoryCreate(BaseModel):
-    name: str
+    name: str = Field(..., min_length=1, max_length=100)
 
 
 class CategoryUpdate(BaseModel):
-    name: str
+    name: str = Field(..., min_length=1, max_length=100)
 
 
 class CategoryOut(BaseModel):

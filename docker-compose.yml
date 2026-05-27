@@ -4,8 +4,8 @@ services:
     container_name: product_db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: product_api
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root123}
+      MYSQL_DATABASE: ${DB_NAME:-product_api}
     ports:
       - "3306:3306"
     volumes:
